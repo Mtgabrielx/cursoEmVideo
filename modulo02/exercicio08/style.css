@@ -1,0 +1,32 @@
+div#a01{
+    display: inline-block; /*dispoe o texto de forma alinhada*/
+    background-color: violet;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+div#analise:hover{
+    color: red;
+}
+
+/* ele vai mexer no paragrafo que esteja dentro da div */
+div > p{
+    /* o display none some com as palavras */
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+    color: white;
+    background-color: red;
+    height: 30px;
+}
+
+div#a01:hover{
+    /* pseudo classe são apresentadas como : */
+    /* hover = quando passar o mouse por cima */
+    background-color: tomato;
+}

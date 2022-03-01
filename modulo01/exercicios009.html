@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <p>reproduzindo audio</p>
+    <!-- <audio src="noticias/guanacast-33.mp3" controls autoplay></audio> -->
+    <!--MP3 wav ogg-->
+
+    <audio preload="metadata" autoplay controls> <!--meta dado carrega apenas o que é necessário, isso impede do padrão ser ativado que carrega o arquivo todo antes de entrar na página -->
+        <source src="noticias/guanacast-33.mp3" type="audio/mpeg">
+        <source src="noticias/guanacast-33.mp3" type="audio/ogg">
+        <source src="noticias/guanacast-33.mp3" type="audio/wav"> <!--arquivo pessadisimo-->
+        <p>Infelizmente seu navegador não reproduz audio</p>
+        <a href="noticias/guanacast-33.mp3">clique aqui para baixar</a>
+    </audio>
+</body>
+</html>

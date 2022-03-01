@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagem dinamica</title>
+</head>
+<body>
+    <h1>Imagem</h1>
+    <p>Tente abrir em vários dispositivos ou mude o tamanho da tela</p>
+    <picture> <!--recebe um tipo de imagem-->
+        <!-- <source media="(max-height: 450px)" srcset="imagens/pequeno.png" type="image/png"> -->
+        <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png"> <!--carrega a foto grande, mas se o tamanho da tela 
+            é menor que 1000px ele carrega a foto media-->
+        <img src="imagens/grande.png" alt="imagem flexivel">
+    </picture>
+</body>
+</html>

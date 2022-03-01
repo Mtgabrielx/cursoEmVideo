@@ -1,0 +1,29 @@
+body{
+    /* Ele tenta acessar a primeira, caso não tenha, vai para a segunda */
+    /* safe font combinations, combinação de fontes seguras para se usar sem dar erro */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Medidas absolutas: cm, mm, in(polegada), px(use), pt, pc
+    
+    
+    Medidas relativas: em(use)( relativo a altura m de uma determinada letra), 
+    ex( tamanho da altura x0, rem(relativo ao root do body), vw( relativo a sua
+    tela), vh(altura da tela), %
+    */
+    /* 16px é o padrão */
+    /* 16px = 1em */
+    /* font-weight peso da fonte
+    tipos: lighter normal bold bolder 
+    font-style: normal ou italico
+    text-decoration: underline sublinhado*/
+    font-size: 0.5em;
+}
+
+h1{
+    /* shorthand font, a ordem importa*/
+
+    font: italic bolder 3em 'work Sans', 'sans-serif'
+}
+
+h2{
+    font: bold 3em 'work Sans';
+}

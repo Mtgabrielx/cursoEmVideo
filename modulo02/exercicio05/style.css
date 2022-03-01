@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+font-family: 'exercito';
+    src: url('Capture\ it.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    /* colocar ,url('') para adicionar mais formatos de fontes */
+    /* tipos de formatos:font: opentype(otf);
+    truetype(ttf)
+    embedded-opentype
+    truetype-aat(apple advanced typography)
+    - svg */
+}
+body{
+    /* Ele tenta acessar a primeira, caso não tenha, vai para a segunda */
+    /* safe font combinations, combinação de fontes seguras para se usar sem dar erro */
+    font-family: 'work sans' ,'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Medidas absolutas: cm, mm, in(polegada), px(use), pt, pc
+    
+    
+    Medidas relativas: em(use)( relativo a altura m de uma determinada letra), 
+    ex( tamanho da altura x0, rem(relativo ao root do body), vw( relativo a sua
+    tela), vh(altura da tela), %
+    */
+    /* 16px é o padrão */
+    /* 16px = 1em */
+    /* font-weight peso da fonte
+    tipos: lighter normal bold bolder 
+    font-style: normal ou italico
+    text-decoration: underline sublinhado*/
+    
+}
+
+h1{
+    /* shorthand font, a ordem importa*/
+
+    font: normal normal 3em 'exercito';
+}
+

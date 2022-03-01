@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: gray;
+            
+        }
+
+        h1{
+            background-color: rgb(103, 103, 114);
+            color: rgb(165, 161, 161);
+            width: 200px;
+            display: inline-block;
+            box-shadow: inset 10px 10px 10px;
+        }
+
+        header{
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        nav{
+            background-color:rgb(56, 56, 56);            
+            padding: 10px;            
+        }
+        nav > a{
+            color: aliceblue;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        article{
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+            /* sombra na caixa */
+            /* deslocamento  horizontal, vertical e espalhamento*/
+            /* pode uasr o editor do navegador para editar o box shadow. Existe
+            tambem a sombra interna, basta adicionar insert no texto */
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.296);
+            border-radius: 10px 0px 10px;
+        }
+
+        footer{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+
+        aside{
+            background-color: rgb(238, 238, 235);
+            border: 10px;
+            margin: 5px;
+        }
+        
+        #artigo{
+
+            font-style: italic;
+        }
+
+        /* #aq{
+            background-color: white;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        } */
+        
+
+        /* bordas decoradas */
+        #personalizada{
+            border: 20px solid black;
+            padding: 10px;
+            /* chama o arquivo de imagem coma  borda, a borda normal tem que
+            existe para isso funcionar, o transparent tira a cor */
+            border-image-source: url("Sem-Título-2.png");
+            /* divide a borda em varias partes */
+            border-image-slice: 23;
+            /* repete a sequencia de imagens */
+            /* border-image-repeat: repeat; */
+            /* border-image-repeat: stretch; */
+            /* shorthand:
+                border-image: url(..) 23 repeat;
+            */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <aside>
+                    <h2>Notícia</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quam iusto, nemo asperiores perspiciatis reiciendis rerum nisi numquam sapiente qui doloribus deserunt, neque eveniet recusandae aperiam corrupti vero eius modi!</p>
+
+                    <p id="artigo">Artigo escrito por Gabriel</p>
+                </aside>
+                <p id="personalizada">borda personalizada</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Desenvoldido pelo Gabriel
+        </p>
+    </footer>
+    <p id="aq"></p>
+</body>
+</html>
