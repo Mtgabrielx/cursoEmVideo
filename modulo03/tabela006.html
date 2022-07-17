@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela responsiva</title>
+    <style>body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        width: 500px;
+        border-collapse: collapse;
+        /*fixando os titulos*/
+        position: relative;
+    }
+    th, td{
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    thead{
+        background-color: gray;
+        color: white;
+    }
+
+    /*fixando os titulos*/
+    thead > tr > th{
+        position: sticky;
+        top: -1px;
+        background-color: #383838;
+
+    }
+
+    .num{
+        text-align: right;
+    }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+    }
+    /*cria um efeito zebrado de 2 em 2
+    podemos colocar odd para que só as impares fiquem de cor diferente
+    e even para par */
+    tbody > tr:nth-child(2n){
+        background-color: lightgray;
+    }
+    div#container{
+        /*gera um scroll latereal na tabela*/
+        overflow-x: auto;
+    }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, similique saepe, veritatis labore omnis sequi, deleniti commodi officia adipisci ipsa exercitationem! Beatae laboriosam a laborum delectus aut, voluptate blanditiis! Cumque?</p>
+    <div id="container">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <tr>
+                <th>produtos</th>
+                <td>Jan</td>
+                <td>fer</td>
+                <td>jun</td>
+                <td>set</td>
+                <td>nov</td>
+                <td>Jan</td>
+                <td>fer</td>
+                <td>jun</td>
+                <td>set</td>
+                <td>nov</td>
+                <td>Jan</td>
+                <td>fer</td>
+                <td>jun</td>
+                <td>set</td>
+                <td>nov</td>
+            </tr>
+            <tr>
+                <th>TV</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>note</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <th>cell</th>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

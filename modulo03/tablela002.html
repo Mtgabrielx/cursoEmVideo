@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela002</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            /*fixando os titulos*/
+            position: relative;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead{
+            background-color: gray;
+            color: white;
+        }
+
+        /*fixando os titulos*/
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+
+        }
+
+        .num{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        /*cria um efeito zebrado de 2 em 2
+        podemos colocar odd para que só as impares fiquem de cor diferente
+        e even para par */
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <!-- estrutura para tableas grandes
+        TABLE
+            CAPTION TEXTO
+            THEAD
+                TR,TD,TH
+            TBODY
+                TR,TD,TH
+            TFOOT
+                TR,TD,TH
+    TH: Titulo
+    TD: Dado
+            -->
+
+    <table>
+        <caption>Tabela de teste</caption>
+        <thead>
+            <tr>
+                <!-- Diz que é titulo da coluna -->
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.910.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- diz é titulo da linha -->
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>67.078.840</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio nisi sit aspernatur explicabo tempore consequuntur ipsam incidunt fuga itaque neque non nemo, error tenetur nihil, minus iure dolorem ratione! In!</p>
+</body>
+</html>
